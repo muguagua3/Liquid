@@ -13,15 +13,15 @@ public final class Items {
 
     public static final ItemGroup CATEGORY = new ItemGroup(
         new NamespacedKey(Liquid.getInstance(), "liquids"),
-        new CustomItemStack(Material.LAVA_BUCKET, "&6Liquids")
+        new CustomItemStack(Material.LAVA_BUCKET, "&6液体")
     );
 
     public static final SlimefunItemStack MELTER = new SlimefunItemStack(
         "MELTER",
         Material.BLAST_FURNACE,
-        "&6Melter",
+        "&6高炉",
         "",
-        "&7A high-temperature furnace",
+        "&7高温炉",
         LoreBuilder.powerPerSecond(32),
         LoreBuilder.powerBuffer(64)
     );
@@ -29,9 +29,9 @@ public final class Items {
     public static final SlimefunItemStack SOLIDIFIER = new SlimefunItemStack(
         "SOLIDIFIER",
         Material.LIGHT_BLUE_STAINED_GLASS,
-        "&bSolidifier",
+        "&b金属固化器",
         "",
-        "&7An advanced freezer",
+        "&7先进的冷凝器",
         LoreBuilder.powerPerSecond(8),
         LoreBuilder.powerBuffer(16)
     );
@@ -41,7 +41,7 @@ public final class Items {
         Material.HAY_BLOCK,
         "&bTest LContainer",
         "",
-        "&7Test Item"
+        "&7Test Item(测试项目)"
     );
 
     public static final SlimefunItemStack TESTLCONTAINER_2 = new SlimefunItemStack(
@@ -49,16 +49,16 @@ public final class Items {
         Material.HAY_BLOCK,
         "&bTest LContainer 2",
         "",
-        "&7Test Item"
+        "&7Test Item(测试项目)"
     );
 
     public static final SlimefunItemStack MIXER = new SlimefunItemStack(
         "MIXER",
         Material.BLAST_FURNACE,
-        "&6Mixer",
+        "&6金属液体搅拌机",
         "",
-        "&7This upgraded melter is perfect",
-        "&7for mixing liquids together",
+        "&7这台升级的熔化器",
+        "&7非常适合混合液体",
         LoreBuilder.powerPerSecond(64),
         LoreBuilder.powerBuffer(128)
     );
@@ -66,9 +66,9 @@ public final class Items {
     public static final SlimefunItemStack CENTRIFUGE = new SlimefunItemStack(
         "CENTRIFUGE",
         Material.HAY_BLOCK,
-        "&6Centrifuge",
+        "&6金属离心机",
         "",
-        "&7The centrifuge can separate liquids",
+        "&7金属离心机可以分离液体",
         LoreBuilder.powerPerSecond(32),
         LoreBuilder.powerBuffer(64)
     );
@@ -76,9 +76,9 @@ public final class Items {
     public static final SlimefunItemStack CRYSTALLIZER = new SlimefunItemStack(
         "CRYSTALLIZER",
         Material.DIAMOND_BLOCK,
-        "&bCrystallizer",
+        "&b结晶器",
         "",
-        "&7The crystallizer can solidify crystals",
+        "&7结晶器可以使特殊的晶体凝固",
         LoreBuilder.powerPerSecond(8),
         LoreBuilder.powerBuffer(16)
     );
@@ -86,12 +86,10 @@ public final class Items {
     public static final SlimefunItemStack SPRAY_SOLIDIFIER = new SlimefunItemStack(
         "SPRAY_SOLIDIFIER",
         Material.SMITHING_TABLE,
-        "&bSpray Solidifier",
+        "&b金属喷雾固化器",
         "",
-        "&7This solidifier sprays a liquid out, turning",
-        "&7the liquid into its dust form. As a result,",
-        "&7this machine works faster but consumes more",
-        "&7power than a regular solidifier",
+        "&7金属喷雾固化器可以将金属熔融喷为粉状",
+        "&7这机器效率急块,但能源消耗也随之增加",
         LoreBuilder.powerPerSecond(64),
         LoreBuilder.powerBuffer(128)
     );
@@ -99,9 +97,9 @@ public final class Items {
     public static final SlimefunItemStack SLAG = new SlimefunItemStack(
         "SLAG",
         Material.CHARCOAL,
-        "&7Slag",
+        "&7熔渣",
         "",
-        "&7One man's trash is another",
-        "&7man's treasure..."
+        "&7你认为是垃圾",
+        "&7他认为是珍宝"
     );
 }

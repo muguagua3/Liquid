@@ -44,7 +44,7 @@ public class Liquid extends JavaPlugin implements SlimefunAddon {
             SlimefunItemStack stack = new SlimefunItemStack(
                 "MOLTEN_" + Util.getID(metal).replace("_INGOT", ""),
                 Material.LAVA_BUCKET,
-                "&6Molten " + ChatUtils.removeColorCodes(ItemUtils.getItemName(metal))
+                "&6熔融" + ChatUtils.removeColorCodes(ItemUtils.getItemName(metal))
                     .replace(" Ingot", "")
             );
             LiquidMetal.addLiquid(metal, stack);
@@ -55,7 +55,7 @@ public class Liquid extends JavaPlugin implements SlimefunAddon {
             SlimefunItemStack stack = new SlimefunItemStack(
                 "MOLTEN_" + Util.getID(crystal),
                 Material.LAVA_BUCKET,
-                "&6Molten " + ChatUtils.removeColorCodes(ItemUtils.getItemName(crystal))
+                "&6熔融 " + ChatUtils.removeColorCodes(ItemUtils.getItemName(crystal))
             );
             LiquidMetal.addCrystal(crystal, stack);
             metals.add(new LiquidMetal(stack, crystal));
@@ -65,7 +65,7 @@ public class Liquid extends JavaPlugin implements SlimefunAddon {
             SlimefunItemStack stack = new SlimefunItemStack(
                 "MOLTEN_" + Util.getID(ore),
                 Material.LAVA_BUCKET,
-                "&6Molten " + ChatUtils.removeColorCodes(ItemUtils.getItemName(ore))
+                "&6熔融 " + ChatUtils.removeColorCodes(ItemUtils.getItemName(ore))
             );
             LiquidMetal.addOre(ore, stack);
             metals.add(new LiquidMetal(stack, ore));

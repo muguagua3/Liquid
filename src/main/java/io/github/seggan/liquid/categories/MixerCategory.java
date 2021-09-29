@@ -31,7 +31,7 @@ public class MixerCategory extends FlexItemGroup {
 
     public MixerCategory() {
         super(new NamespacedKey(Liquid.getInstance(), "Mixer_recipes_category"),
-            new CustomItemStack(Items.MIXER.getType(), "&6Mixer Recipes"));
+            new CustomItemStack(Items.MIXER.getType(), "&6搅拌机配方"));
     }
 
     @Override
@@ -44,7 +44,7 @@ public class MixerCategory extends FlexItemGroup {
     public void open(Player player, PlayerProfile playerProfile, SlimefunGuideMode mode) {
         List<MachineRecipe> recipes = ((Mixer) SlimefunItem.getByItem(Items.MIXER)).getMachineRecipes();
 
-        ChestMenu menu = new ChestMenu("&6Mixer Recipes");
+        ChestMenu menu = new ChestMenu("&6搅拌机配方");
 
         // Header
         for (int i = 0; i < 9; ++i) {
@@ -76,7 +76,7 @@ public class MixerCategory extends FlexItemGroup {
     }
 
     private void displayItem(PlayerProfile p, MachineRecipe r) {
-        ChestMenu menu = new ChestMenu("&7Recipe for " + r.getOutput()[0].getItemMeta().getDisplayName());
+        ChestMenu menu = new ChestMenu("&7此配方为 " + r.getOutput()[0].getItemMeta().getDisplayName());
 
         Player player = p.getPlayer();
 
