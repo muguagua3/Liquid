@@ -38,13 +38,13 @@ public class Melter extends AContainer implements RecipeDisplayItem {
 
         registerRecipe(
             3,
-            new ItemStack[]{new ItemStack(4,Material.COAL), new ItemStack(Material.BUCKET)},
+            new ItemStack[]{4,new ItemStack(Material.COAL), new ItemStack(Material.BUCKET)},
             new ItemStack[]{liquids.get(SlimefunItems.CARBON)}
         );
 
         registerRecipe(
             3,
-            new ItemStack[]{new ItemStack(4,Material.CHARCOAL), new ItemStack(Material.BUCKET)},
+            new ItemStack[]{4,new ItemStack(Material.CHARCOAL), new ItemStack(Material.BUCKET)},
             new ItemStack[]{liquids.get(SlimefunItems.CARBON)}
         );
 
