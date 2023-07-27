@@ -2,5 +2,6 @@ name: Liquid
 author: Seggan
 main: io.github.seggan.liquid.Liquid
 depend: [Slimefun]
+softdepend: [GuizhanLibPlugin]
 version: ${project.version}
 api-version: 1.14
